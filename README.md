@@ -1,6 +1,15 @@
-# GithubSearch
+# Project Name 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+- GitHub Search
+
+## Project Description 
+
+- A website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
+
+## Author 
+
+- [John Karima](https://github.com/JohnKarima)
 
 ## Development server
 
@@ -25,3 +34,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Technologies Used
+
+- HTML, CSS, JavaScript, Bootstrap & TypeScript
+
+## Link to Live Project
+
+- TBD
+
+## Contact Information
+
+- karimajohn24@gmail.com
+
+## License Copyright 
+
+- 2020, John Karima.
+
+https://opensource.org/licenses/MIT
