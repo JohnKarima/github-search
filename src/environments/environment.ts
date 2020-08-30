@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  PAT: "c40b7197f3a936f7c0342ff0df3bd97c7b836c9f"
 };
 
 /*
