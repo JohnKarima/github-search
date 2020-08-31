@@ -41,7 +41,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Link to Live Project
 
-- TBD
+- https://johnkarima.github.io/github-search/
 
 ## Contact Information
 
