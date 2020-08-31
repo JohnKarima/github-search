@@ -1,16 +1,14 @@
-/* .users {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 1000px;
-  margin: 0 auto;
- }
-*/
+.card {
+  opacity: 0.8;
+  text-align: center;
+}
 
 img {
   max-width: 250px;
+  text-align: center;
 } 
 
-li {
+li, a {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 150%;
 }
@@ -28,6 +26,13 @@ body {
   background-repeat: no-repeat;
   background-position: inherit;
   background-attachment: fixed;
+  height: 100vh;
 }
 
-
+/* .users {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 1000px;
+  margin: 0 auto;
+ }
+*/
