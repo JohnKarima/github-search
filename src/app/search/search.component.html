@@ -1,8 +1,19 @@
-<div class="search">
+<!-- <div class="search">
   <h4>Search for Users</h4>
   <input type="text" placeholder="Search for Users" >
-</div>
+</div> -->
 
+
+
+
+
+<div class="form">
+  <form (ngSubmit)= 'findProfile()' #searchForm='ngForm'>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="search baby" [(ngModel)] = "userName" name="userName" (keyup)="findProfile()">
+    </div>
+  </form>
+</div>
 
 
 <!-- #user (keyup.enter)="search(user.login)" -->

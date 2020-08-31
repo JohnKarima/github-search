@@ -29,7 +29,7 @@ export class DataService {
     }
     let promise = new Promise((resolve,reject)=>{
       //this.userName = [];
-      this.http.get<ApiResponse>(environment.apiURL+ environment.PAT).toPromise().then(response=>{
+      this.http.get<ApiResponse>(environment.apiURLjohn+ environment.PAT).toPromise().then(response=>{
         this.userName.userName = response.userName
         this.userName.following = response.following
         this.userName.followers = response.followers

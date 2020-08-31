@@ -4,6 +4,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
+  providers:[DataService],
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
