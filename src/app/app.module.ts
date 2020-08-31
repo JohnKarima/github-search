@@ -9,12 +9,14 @@ import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SearchComponent,
     UsersComponent,
+    
     
   ],
   imports: [

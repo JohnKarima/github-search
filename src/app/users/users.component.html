@@ -1,7 +1,47 @@
 <div class="users">
-  <div class="user" *ngFor="let user of users">
+  <div class="user" >
 
-    <img [src]="user.avatar_url" alt="image">
+
+
+
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" [src]="userName.avatar_url" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{userName.login}}</h5>
+        <ul>
+          <li class ="badge badge-success">Followers: {{userName.followers}}</li> <br>
+          <li class ="badge badge-success">Following: {{userName.following}}
+          </li> <br>
+          <li class ="badge badge-info">Public Repos: {{userName.public_repos}} </li>
+
+        </ul>
+       
+
+        <a href="https://github.com/JohnKarima" target="blank" class="btn btn-primary">Visit Profile on GitHub</a>
+      </div>
+    </div>
+
+    <!-- {{UserName.followers}}
+    {{UserName.login}} -->
+    
+    <!-- <img [src]="UserName.avatar_url" alt="image"> -->
+
+    
+
+    <!-- <img [src]="user.avatar_url" alt="image">
+    <h3>{{user.login}}</h3>
+    <h3>{{user.node_id}}</h3>
+    <h3>{{user.following}}</h3>
+    <h3>{{user.followers}}</h3>
+ -->
+
+ <p>hello</p>
 
   </div>
+
+  
 </div>
+
+
+<!-- *ngFor="let UserName of userName" -->

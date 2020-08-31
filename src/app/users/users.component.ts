@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { UserName } from '../UserName-class/user-name';
 
 @Component({
   selector: 'app-users',
@@ -7,17 +8,16 @@ import { DataService } from '../data.service';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  users;
+  userName: UserName//[];
+  
 
   constructor(private dataService: DataService) { }
 
-  ngOnInit(): void {
-    this.dataService.getUsers()
-      .subscribe(users => {
-        console.log(users)
-        this.users = users
-        //console.log(this.users)
-      })
+  ngOnInit() {
+
+    this.dataService.DataServiceRequest()
+    this.userName = this.dataService.userName
+    console.log(this.userName)
   }
 
 }
@@ -45,4 +45,15 @@ export class UsersComponent implements OnInit {
 //       })
 //   }
 
+// }
+
+
+
+// ngOnInit(): void {
+//   this.dataService.getUsers()
+//     .subscribe(users => {
+//       console.log(users)
+//       this.users = users
+//       //console.log(this.users)
+//     })
 // }
