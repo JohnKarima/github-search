@@ -10,7 +10,7 @@ export class DataService {
   userName: UserName//[]  = [];
 
   constructor(private http: HttpClient) { 
-    this.userName = new UserName("","","","","",0);
+    this.userName = new UserName("","","","","",0, new Date());
   }
   
 
@@ -22,6 +22,7 @@ export class DataService {
       login:string,
       avatar_url: string,
       public_repos: number,
+      created_at: Date,
 
 
 
@@ -35,6 +36,7 @@ export class DataService {
         this.userName.login = response.login
         this.userName.avatar_url = response.avatar_url
         this.userName.public_repos = response.public_repos;
+        this.userName.created_at = response.created_at
         //this.userName.push(response);
 
         resolve()
