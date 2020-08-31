@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+//import { DataService } from '../data.service';
 import { HttpClient } from '@angular/common/http';
-
+import {UsersearchService} from '../usersearch.service'
 import { UserName } from '../UserName-class/user-name';
 import {NgForm } from '@angular/forms';
 
@@ -9,23 +9,36 @@ import {NgForm } from '@angular/forms';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  providers:[DataService],
+  providers:[UsersearchService],
   styleUrls: ['./search.component.css']
 })
+
 export class SearchComponent implements OnInit{
   userName: UserName;
-  //userName: string
+  //userName: UserName;
 
-  constructor(private Dataservice:DataService) {}
-    findProfile(form:NgForm){
-      this.Dataservice.updateProfile(this.userName)
-      this.Dataservice.DataServiceRequest()
-      this.userName=this.Dataservice.userName
+  login: string
+  
+
+  constructor(private UsersearchService:UsersearchService) {
+
+  }
+    findProfile(){
+      this.UsersearchService.updateProfile(this.login)
+      this.UsersearchService.profileRequest()
+      this.userName=this.UsersearchService.userName
       //form.resetForm
+      console.log(this.login)
+
     }
     ngOnInit(): void {
 
   }
+  // updateProfile(userName){
+  //   this.userName = userName
+  //   console.log("olaman")
+
+  // }
       
   }
 //}
