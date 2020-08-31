@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { TimeCounterPipe } from './time-counter.pipe';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -18,6 +19,7 @@ import { TimeCounterPipe } from './time-counter.pipe';
     SearchComponent,
     UsersComponent,
     TimeCounterPipe,
+    AboutComponent,
     
     
   ],
