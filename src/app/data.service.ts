@@ -10,7 +10,7 @@ export class DataService {
   userName: UserName//[]  = [];
 
   constructor(private http: HttpClient) { 
-    this.userName = new UserName("","","","","",0, new Date());
+    this.userName = new UserName("","","","","",0,);
   }
   
 
@@ -41,6 +41,7 @@ export class DataService {
 
         resolve()
         console.log(response)
+        //console.log("helooo")
 
         
       },
