@@ -51,6 +51,9 @@ export class DataService {
     return promise
     
   }
+  updateProfile(userName){
+    this.userName = userName
+  }
 }
 
 
