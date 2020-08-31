@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { DataService } from '../data.service';
-import { HttpClient } from '@angular/common/http';
 import { UsersearchService } from '../usersearch.service'
 import { UserName } from '../UserName-class/user-name';
 import { NgForm } from '@angular/forms';
