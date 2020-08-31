@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment';
 import { UserName } from './UserName-class/user-name';
-import { newArray } from '@angular/compiler/src/util';
 
 @Injectable({
   providedIn: 'root'
