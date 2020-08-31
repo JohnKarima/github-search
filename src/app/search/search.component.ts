@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit{
 
   }
     findProfile(){
-      this.UsersearchService.updateProfile(this.login)
+      this.UsersearchService.updateProfile(this.userName)
       this.UsersearchService.profileRequest()
       this.userName=this.UsersearchService.userName
       //form.resetForm
