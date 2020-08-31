@@ -1,11 +1,33 @@
-.users {
+/* .users {
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 1000px;
   margin: 0 auto;
+ }
+*/
+
+img {
+  max-width: 250px;
+} 
+
+li {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 150%;
 }
 
-.user img {
-  max-width: 250px;
+h3 {
+  font-size: 300%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
 }
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgb(0,0,0,0.4)),url(src/assets/jeremy-bishop-8xznAGy4HcY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: inherit;
+  background-attachment: fixed;
+}
+
 

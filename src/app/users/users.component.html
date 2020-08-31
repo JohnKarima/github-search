@@ -1,19 +1,20 @@
-<div class="users">
+<body>
+<div class="container">
   <div class="user" >
 
 
 
 
 
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 38rem;">
       <img class="card-img-top" [src]="userName.avatar_url" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">{{userName.login}}</h5>
+        <h3 class="card-title">User: {{userName.login}}</h3>
         <ul>
-          <li class ="badge badge-success">Followers: {{userName.followers}}</li> <br>
+          <li class ="badge badge-success">Followers: {{userName.followers}}</li> <br> <br>
           <li class ="badge badge-success">Following: {{userName.following}}
-          </li> <br>
-          <li class ="badge badge-info">Public Repos: {{userName.public_repos}} </li>
+          </li> <br> <br>
+          <li class ="badge badge-info">Public Repos: {{userName.public_repos}} </li> <br> <br>
           <li class ="badge badge-info">Created on: {{userName.created_at|date}} </li>
 
         </ul>
@@ -24,7 +25,13 @@
     </div>
 
     <!-- {{UserName.followers}}
-    {{UserName.login}} -->
+    {{UserName.login}}
+
+        <div class="card" style="width: 18rem;">
+
+  
+  
+  -->
     
     <!-- <img [src]="UserName.avatar_url" alt="image"> -->
 
@@ -36,12 +43,11 @@
     <h3>{{user.following}}</h3>
     <h3>{{user.followers}}</h3>
  -->
-
+<!-- *ngFor="let UserName of userName" -->
 
   </div>
 
   
 </div>
+</body>
 
-
-<!-- *ngFor="let UserName of userName" -->

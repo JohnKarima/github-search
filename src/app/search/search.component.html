@@ -9,7 +9,7 @@
 <div class="form">
   <form (ngSubmit)= 'findProfile()' #searchForm='ngForm'>
     <div class="form-group">
-      <input type="text" class="form-control" placeholder="search baby" [(ngModel)] = "userName" name="userName" (keyup)="findProfile()" value="search">
+      <input type="text" class="form-control" placeholder="Enter UserName to search" [(ngModel)] = "userName" name="userName" (keyup)="findProfile()" value="search">
     </div>
     
   </form>
